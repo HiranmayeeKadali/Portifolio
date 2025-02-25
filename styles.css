@@ -1,0 +1,192 @@
+/* body {
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 24px;
+    line-height: 1.8;
+    text-align: center;
+    background-color: #F8F3EC;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}  */
+
+body {
+    background: #f9f6e3;
+    color: #333;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 24px;
+    line-height: 1.8;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+} 
+
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    font-size: 20px;
+    background: #f9f6e3; /* Ensures it blends with the background */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Adds a soft shadow for clarity */
+}
+
+p span.highlight {
+    color: #d35400; /* Change this to any color you prefer */
+    font-weight: bold;
+}
+
+.header-left a, .header-right a {
+    margin: 0 15px; /* Adjust spacing */
+}
+
+
+.header-left a, .header-right a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.header-left a:hover, .header-right a:hover {
+    transform: scale(1.1);
+}
+
+
+.header-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.header-links a {
+    background: #f3e8e2;  /* Same color as skills */
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.2s ease-in-out;
+}
+
+.header-links a:hover {
+    transform: scale(1.1);
+    background: #e0d0c7; /* Slightly darker on hover */
+}
+
+
+#hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background:  #f9f6e3 100%;
+    position: relative;
+    padding-top: 60px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-content img {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+.hero-tagline {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #666;
+    font-style: italic;
+}
+
+.doodle-links {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.doodle-link {
+    font-size: 22px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    white-space: nowrap;
+    position: absolute;
+}
+
+.doodle-link:nth-child(1) { /* About Me - Left */
+    top: 50%;
+    left: -120px;
+    transform: translateY(-50%);
+}
+
+.doodle-link:nth-child(2) { /* Experience - Right */
+    top: 50%;
+    right: -120px;
+    transform: translateY(-50%);
+}
+
+.doodle-link:nth-child(3) { /* Projects - Left Below */
+    bottom: -30px;
+    left: -120px;
+}
+
+.doodle-link:nth-child(4) { /* Skills - Right Below */
+    bottom: -30px;
+    right: -120px;
+}
+
+.doodle-link:nth-child(5) { /* Contact - Center Bottom */
+    bottom: -90px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.interactive-section {
+    padding: 140px 20px; /* Increased padding for a better scrolling experience */
+    transition: all 0.3s ease-in-out;
+}
+
+
+.dark-mode {
+    background-color: #2E2E38;
+    color: white;
+}
+
+a {
+    color: #D74B7B; /* Soft pinkish-red for a cute touch */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+}
+
+a:hover {
+    color: #B03060; /* Darker pink on hover */
+    text-decoration: underline;
+}
